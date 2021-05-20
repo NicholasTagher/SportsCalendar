@@ -11,8 +11,8 @@ driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
 # Your Account Sid and Auth Token from twilio.com/console
 # and set the environment variables. See http://twil.io/secure
-account_sid = 'ACdd0d0b8a67da8d726ddb037a746bcff4'
-auth_token = 'abeb03cf3c4a1ea451c29a2953c6a3cd'
+account_sid = 'XXXXXXX'
+auth_token = 'XXXXXXX'
 client = Client(account_sid, auth_token)
 
 team_dictionary = {
@@ -131,8 +131,8 @@ print(text_message)
 message = client.messages \
                 .create(
                      body= f"\n{text_message}",
-                     from_='+16107562602',
-                     to='+19176976256'
+                     from_='+XXXXXXX',
+                     to='+XXXXXXX'
                  )
 
 print(message.sid)
